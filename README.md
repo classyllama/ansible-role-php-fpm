@@ -20,13 +20,13 @@ See `defaults/main.yml` for complete list of variables available to customize th
 
 ## Dependencies
 
-* `davidalger.repo_ius`
+* `classyllama.repo_ius`
 
 ## Example Playbook
 
     - hosts: web-servers
       roles:
-        - { role: davidalger.php_fpm, tags: php-fpm }
+        - { role: classyllama.php_fpm, tags: php-fpm }
 
 ## License
 

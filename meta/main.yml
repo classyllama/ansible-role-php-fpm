@@ -1,6 +1,6 @@
 ---
 dependencies:
-  - davidalger.repo_ius
+  - classyllama.repo_ius
 
 galaxy_info:
   role_name: php_fpm

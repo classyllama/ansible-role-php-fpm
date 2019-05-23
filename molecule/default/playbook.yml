@@ -4,4 +4,4 @@
   become: true
 
   roles:
-    - role: davidalger.php_fpm
+    - role: classyllama.php_fpm
