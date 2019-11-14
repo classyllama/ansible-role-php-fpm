@@ -1,6 +1,6 @@
 ---
 dependencies:
-  - classyllama.repo_ius
+  - { role: classyllama.repo-ius, when: not alpacaglue_relyon_rsepel or classyllama_relyon_rsepel | default(false) }
 
 galaxy_info:
   role_name: php_fpm
