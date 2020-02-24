@@ -1,6 +1,11 @@
 ---
 - name: "{{ php_fpm_pool }} : create log files"
-  shell: "touch {{ item }}"
+  file:
+    path: "{{ item }}"
+    state: touch
+    owner: "{{ php_fpm_owner }}"
+    group: "{{ php_fpm_group }}"
+    mode: 0600
   args:
     creates: "{{ item }}"
   with_items:
