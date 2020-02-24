@@ -6,8 +6,6 @@
     owner: "{{ php_fpm_owner }}"
     group: "{{ php_fpm_group }}"
     mode: 0600
-  args:
-    creates: "{{ item }}"
   with_items:
     - "{{ php_fpm_errorlog }}"
     - "{{ php_fpm_slowlog }}"
